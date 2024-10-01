@@ -1,0 +1,30 @@
+OBRIGATÓRIO
+
+
+Criar um novo projeto usando clean architecture e TypeScript
+
+Funcionalidades:
+
+CREATE (criar)
+LISTALL (listar tudo)
+UPDATE (atualizar)
+DELETE (deletar)
+
+Tema livre, porém o objeto de domain deve ter id e data gerados em tempo de execução de código e pelo menos mais 3 campos
+
+Tema  escolhilho: animals 
+
+export interface Animal {
+  id: string;               // Identificador único
+  created_at: string;        // Data de criação
+  name: string;              // Nome do animal
+  description: string;       // Descrição do animal
+  value: number;             // Valor (talvez referente à taxa de adoção)
+  age: number;               // Idade do animal
+  breed: string;             // Raça do animal
+  color: string;             // Cor do animal
+}
+
+Criar README contando o que aprendeu, estrutura de pastas, prints dos testes com sucesso no insomnia ou postaman, como rodar o projeto etc.
+
+Como será a entrega: seu link do github

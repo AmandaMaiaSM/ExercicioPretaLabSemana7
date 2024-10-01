@@ -1,0 +1,28 @@
+src/
+│
+├── application/
+│   ├── repositories/
+│   │   └── animal-repository.ts           # Interface para o repositório de Animal
+│   │   └── id-generator-interface.ts      # Interface para gerar IDs
+│   └── use-cases/
+│       ├── create-animal-use-case.ts      # Caso de uso para criação de Animal
+│       ├── list-all-animals-use-case.ts   # Caso de uso para listar todos os animais
+│       ├── update-animal-use-case.ts      # Caso de uso para atualizar um animal
+│       └── delete-animal-use-case.ts      # Caso de uso para deletar um animal
+│
+├── domain/
+│   └── animal.ts                          # Interface e regras de negócio 
+│
+├── infrastructure/
+│   ├── database/
+│   │   └── repository.ts                  # Implementação do repositório 
+│   └── utils/
+│       └── config.ts                      # Configurações de dependências e banco de dados
+│       └── id-generator.ts                # Implementação para gerar IDs
+│
+├── interface/
+│   └── animal-controller.ts               # Controlador para lidar com requisições HTTP
+│   ├── index.ts                           # Arquivo principal da aplicação
+│
+└── tests/
+    
